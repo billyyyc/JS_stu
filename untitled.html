@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>JS学习</title>
+	<style type="text/css">
+	#div1{
+		width:200px;
+		height: 200px;
+		background: #999;
+	}
+	</style>
+	<script type="text/javascript">
+	function setstyle (name,value1) {
+		var oDiv=document.getElementById('div1');
+		oDiv.style[name]=value1;
+	}
+	</script>
+</head>
+<body>
+	<input type="button" value="Green" onmouseover="setstyle('background','green')">
+	<input type="button" value="Red" onmouseover="setstyle('width','100px')">
+	<input type="button" value="Gray" onmouseover="setstyle('height','400px')">	
+	<input type="button" value="Txt" onclick="settxt()">	
+	<div id="div1"></div>
+</body>
+</html>
