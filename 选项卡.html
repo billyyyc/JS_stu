@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+	#div1 div{display:none;width: 200px;height: 200px;background: #ccc;}
+	#div1 input{background: #ccc;width: 40px;border-bottom: none;}
+	#div1 input .act{background: yellow;}
+	</style>
+	<script type="text/javascript">
+	window.onload=function  () 
+	{
+		var oDiv=document.getElementById('div1');
+		var oIn=oDiv.getElementsByTagName('input');
+		var oDiv1=oDiv.getElementsByTagName('div');
+		for(var i=0;i<oIn.length;i++)
+		{
+			oIn[i].index=i;
+			oIn[i].onmouseover=function  () 
+				{
+					for (var i = 0; i < oIn.length; i++) 
+					{
+						oIn[i].className='';
+						oDiv1[i].style.display='none';
+					};
+					this.className='act';
+					oDiv1[this.index].style.display='block';
+				}
+		}
+	}
+	</script>
+</head>
+<body>
+<div id="div1">
+<input type="button" value="第一">
+<input type="button" value="第二">
+<input type="button" value="第三">
+<input type="button" value="第四">
+<div>1111</div>
+<div>2222</div>
+<div>3333</div>
+<div>4444</div>
+</div>
+</body>
+</html>
