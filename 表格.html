@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>表格</title>
+	<script type="text/javascript">
+	window.onload=function() {
+		var oTab=document.getElementById('tab1')
+		var oTd=oTab.tBodies[0].rows[0].cells[1]
+		alert(oTd.innerHTML);
+	}
+	</script>
+</head>
+<body>
+<table id="tab1" border="1px" width="500px">
+	<thead>
+		<td>ID</td>
+		<td>姓名</td>
+		<td>年龄</td>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>yyc</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>billyyyc</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>阿川仔</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>小鱼</td>
+			<td>25</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
